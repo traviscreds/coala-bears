@@ -39,7 +39,7 @@ cache: &global_cache
 
 jobs:
   include:
-    Manually added "language" entries should complete test coverage
+    # Manually added "language" entries should complete test coverage
     - stage: test-languages
       dist: xenial
       # This is in generic image, as language: haskell isnt working yet
@@ -120,7 +120,7 @@ jobs:
             - php-codesniffer
             - verilator
 
-    Additonal manual entries
+    # Additonal manual entries
     - python: 3.6.9
       stage: sentinel
       before_install: []
